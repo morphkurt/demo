@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/mermaid@8.4.3/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" href="css/mermaid.css">
+</head>
+
+<body>
+    <div class="mermaid">
+        sequenceDiagram
+        Source Handling ->> Ingestion Flow: source curation
+        Ingestion Flow ->> E2E OVP:upload to via Java backed
+        Akamai CDN ->> E2E OVP: http streaming (origin)
+        JW Player -->> Akamai Analytics: analytics beacon
+        JW Player ->> Akamai CDN: http streaming
+        style Source Handling fill:#f9f,stroke:#333,stroke-width:4px
+
+    </div>
+  
+
+    <script>mermaid.initialize({ startOnLoad: true , cloneCssStyles: true});</script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/bitmovin.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1  -->
+            <section>
+                <img data-src="pngs/usecase-1/Slide2.png">
+            </section>
+
+            <!-- Slide 2  -->
+
+            <section>
+                <img data-src="pngs/usecase-1/Slide3.png">
+            </section>
+
+            <!-- Slide 3  -->
+
+
+            <section data-markdown>
+                    <textarea data-template>
+                        ##  Integration with Bitmovin Encoding SDK
+
+                        [Demo Page](https://github.com/morphkurt/bitmovin-akamai-analytics)
+                    </textarea>
+                </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ##  Integration with Akamai Analytics
+                    
+                    Web SDK based Sample integration with Akamai analytics is covered at the following [location](https://github.com/morphkurt/bitmovin-akamai-analytics) 
+                    
+                    [Demo Page](https://github.com/morphkurt/bitmovin-akamai-analytics)
+                </textarea>
+            </section>
+
+            <section data-markdown>
+                    <textarea data-template>
+                        ##  Sample Integration with DRM
+                        
+                        Sample integration with DRM is covered at the following [location](https://github.com/morphkurt/bitmovin-akamai-analytics) 
+                        
+                        [Demo Page](https://github.com/morphkurt/bitmovin-akamai-analytics)
+                    </textarea>
+    
+    
+                </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                // Interpret Markdown in <section> elements
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true }
+            ]
+        });
+    </script>
+    <script>
+        function log(m) {
+            document.getElementById('log').innerHTML += '</br>' + m;
+            console.log(m); // you can do print followersSum wherever you want
+        }
+    </script>
+</body>
+
+</html>

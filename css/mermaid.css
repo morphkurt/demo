@@ -1,0 +1,85 @@
+body {
+    background: white;
+}
+
+.cssClass > rect{
+    fill:#FF0000;
+    stroke:#FFFF00;
+    stroke-width:4px;
+}
+
+.actor {
+    stroke: #19B3FF;
+    fill: #19B3FF;
+}
+text.actor {
+    fill:black;
+    stroke:none;
+    font-family: sofia-pro, sans-serif;;
+}
+
+.actor-line {
+    stroke:grey;
+}
+
+.messageLine0 {
+    stroke-width:1.5;
+    stroke-dasharray: "2 2";
+    marker-end:"url(#arrowhead)";
+    stroke:black;
+}
+
+.messageLine1 {
+    stroke-width:1.5;
+    stroke-dasharray: "2 2";
+    stroke:black;
+}
+
+#arrowhead {
+    fill:black;
+
+}
+
+.messageText {
+    fill:black;
+    stroke:none;
+    font-family: sofia-pro, sans-serif;;
+    font-size:14px;
+}
+
+.labelBox {
+    stroke: #19B3FF;
+    fill: #19B3FF;
+}
+
+.labelText {
+    fill:black;
+    stroke:none;
+    font-family: sofia-pro, sans-serif;;
+}
+
+.loopText {
+    fill:black;
+    stroke:none;
+    font-family: sofia-pro, sans-serif;;
+}
+
+.loopLine {
+    stroke-width:2;
+    stroke-dasharray: "2 2";
+    marker-end:"url(#arrowhead)";
+    stroke: #CCCCFF;
+}
+
+.note {
+    stroke: #decc93;
+    stroke: #CCCCFF;
+    fill: #fff5ad;
+}
+
+.noteText {
+    fill:black;
+    stroke:none;
+    font-family: 'trebuchet ms', verdana, arial;
+    font-size:14px;
+}
