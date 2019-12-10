@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AkamaiPlayerAnalyticsConfig debug="0" exception="0" logWindow="0">
+    <beaconId>122</beaconId>
+    <beaconVersion>1.3</beaconVersion>
+    <isActive>1</isActive>
+    <logTo logInterval="300" logType="relative" maxLogLineLength="2048" secondaryLogTime="5">
+        <host>http://79423.analytics.edgesuite.net</host>
+        <path>/9.gif</path>
+        <logVersion>1.2</logVersion>
+        <formatVersion>1.1</formatVersion>
+    </logTo>
+    <security>
+        <ViewerDiagnostics>
+           <salt derivedhashlength="32" hashfunction="HmacSHA1" iterations="15" value="SampleSaltValue" version="1.0"/>
+        </ViewerDiagnostics>
+    </security>
+    <bucketInfo>
+        <bucketCount>20</bucketCount>
+        <bucketLength>900</bucketLength>
+    </bucketInfo>
+    <statistics useKey="1">
+        <split>
+            <dataMetrics>
+                <data key="za" name="partNumber"/>
+                <data key="zb" name="totalParts"/>
+            </dataMetrics>
+        </split>
+        <error eventCode="E">
+            <dataMetrics>
+                <data key="v" name="currentStreamTime"/>
+                <data key="aa" name="hostName"/>
+                <data key="ab" name="appName"/>
+                <data key="ad" name="port"/>
+                <data key="ae" name="protocol"/>
+                <data key="af" name="playerReferrer"/>
+                <data key="ai" name="userAgent"/>
+                <data key="aj" name="playerVersion"/>
+                <data key="ak" name="playerType"/>
+                <data key="am" name="format"/>
+                <data key="an" name="connectTime"/>
+                <data key="ao" name="bufferingTime"/>
+                <data key="ap" name="startupTime"/>
+                <data key="aq" name="streamLength"/>
+                <data key="ar" name="bytesTotal"/>
+                <data key="as" name="encodedFPS"/>
+                <data key="at" name="browser"/>
+                <data key="au" name="browserSize"/>
+                <data key="av" name="videoSize"/>
+                <data key="aw" name="streamUrl"/>
+                <data key="ay" name="pluginVersion"/>
+                <data key="az" name="beaconVersion"/>
+                <data key="ba" name="bucketLength"/>
+                <data key="bb" name="serverIp"/>
+                <data key="cl" name="contentLength"/>
+                <data key="cm" name="cdn">
+                    <matchRules>
+                        <match key="Akamai" name="hostName" type="pattern" value=".akamaihd.net,.akamai.net,.akastream.net,.edgefcs.net,.edgesuite.net"/>
+                        <match key="Limelight" name="hostName" type="pattern" value=".llnwd.net"/>
+                        <match key="Level 3" name="hostName" type="pattern" value=".level3.net,.fplive.net"/>
+                    </matchRules>
+                </data>
+                <data key="cn" name="connectivity"/>
+                <data key="cy" name="contentType"/>
+                <data key="es" name="_m_est"/>
+                <data key="et" name="_m_eet"/>
+                <data key="ft" name="_m_isft"/>
+                <data key="gb" name="adSession"/>
+                <data key="gc" name="adCount"/>
+                <data key="gh" name="adAbandonCount"/>
+                <data key="sc" name="subCategory"/>
+                <data key="ta" name="totalRebufferTime"/>
+                <data key="tb" name="maxPersistentBitRate"/>
+                <data key="td" name="totalAdPlayClockTime"/>
+                <data key="ti" name="maxBandwidth"/>
+                <data key="tx" name="totalPlayClockTime"/>
+                <data key="ty" name="totalPlayStreamTime"/>
+                <data key="tz" name="totalRebufferCount"/>
+                <data key="va" name="isVisitStart" sendOnce="1"/>
+                <data key="qoe" name="playquality"/>
+            </dataMetrics>
+        </error>
+        <visit eventCode="V">
+            <dataMetrics>
+                <data key="vb" name="isVisitEnd"/>
+                <data key="vc" name="visitAttempts"/>
+                <data key="vd" name="visitPlays"/>
+                <data key="ve" name="visitViews"/>
+                <data key="vf" name="visitErrors"/>
+                <data key="vg" name="visitInterval"/>
+                <data key="vh" name="visitPlayClockTime"/>
+                <data key="vi" name="visitPlayStreamTime"/>
+                <data key="vj" name="visitRebufferCount"/>
+                <data key="vk" name="visitRebufferTime"/>
+                <data key="vl" name="visitMaxPersistentBitRateBucket"/>
+                <data key="vm" name="visitStartupErrors"/>
+                <data key="vo" name="visitAdPlayClockTime"/>
+                <data key="vp" name="visitAdStartCount"/>
+                <data key="vq" name="visitAdAbandonCount"/>
+            </dataMetrics>
+        </visit>
+        <playing eventCode="P">
+            <dataMetrics>
+                <data key="n" name="playBackBitRate"/>
+                <data key="o" name="audioBandwidth"/>
+                <data key="p" name="videoBandwidth"/>
+                <data key="q" name="dataBandwidth"/>
+                <data key="r" name="audioBufferLength"/>
+                <data key="s" name="videoBufferLength"/>
+                <data key="t" name="dataBufferLength"/>
+                <data key="u" name="droppedFrames"/>
+                <data key="v" name="currentStreamTime"/>
+                <data key="x" name="playClockTime"/>
+                <data key="y" name="playStreamTime"/>
+                <data key="z" name="rebufferCount"/>
+                <data key="aa" name="hostName"/>
+                <data key="ab" name="appName"/>
+                <data key="ad" name="port"/>
+                <data key="ae" name="protocol"/>
+                <data key="af" name="playerReferrer"/>
+                <data key="ai" name="userAgent"/>
+                <data key="aj" name="playerVersion"/>
+                <data key="ak" name="playerType"/>
+                <data key="am" name="format"/>
+                <data key="an" name="connectTime"/>
+                <data key="ao" name="bufferingTime"/>
+                <data key="ap" name="startupTime"/>
+                <data key="aq" name="streamLength"/>
+                <data key="ar" name="bytesTotal"/>
+                <data key="as" name="encodedFPS"/>
+                <data key="at" name="browser"/>
+                <data key="au" name="browserSize"/>
+                <data key="av" name="videoSize"/>
+                <data key="aw" name="streamUrl"/>
+                <data key="ay" name="pluginVersion"/>
+                <data key="az" name="beaconVersion"/>
+                <data key="ba" name="bucketLength"/>
+                <data key="bb" name="serverIp"/>
+                <data key="cm" name="cdn">
+                    <matchRules>
+                        <match key="Akamai" name="hostName" type="pattern" value=".akamaihd.net,.akamai.net,.akastream.net,.edgefcs.net,.edgesuite.net,vod.hstream.video.nfl.com,a.video.nfl.com,ingame.hstream.video.nfl.com"/>
+                        <match key="Limelight" name="hostName" type="pattern" value=".llnwd.net,l.video.nfl.com"/>
+                        <match key="Level 3" name="hostName" type="pattern" value=".level3.net,.fplive.net"/>
+                    </matchRules>
+                </data>
+                <data key="da" name="rebufferTime"/>
+                <data key="db" name="averageFPS"/>
+                <data key="dc" name="bytesLoaded"/>
+                <data key="dd" name="pauseCount"/>
+                <data key="de" name="pauseDuration"/>
+                <data key="dg" name="seekCount"/>
+                <data key="dh" name="seekTime"/>
+                <data key="di" name="seekIntervalsAsString"/>
+                <data key="dj" name="pauseSeekSession"/>
+                <data key="dk" name="bandwidthPercent"/>
+                <data key="dl" name="bufferLength"/>
+                <data key="dm" name="averageFPSPercent"/>
+                <data key="dn" name="totalBandwidth"/>
+                <data key="do" name="resumeBufferCount"/>
+                <data key="dp" name="resumeBufferTime"/>
+                <data key="dq" name="bytesPlayed"/>
+                <data key="dr" name="availableBandwidth"/>
+                <data key="ds" name="fullScreenClockTime"/>
+                <data key="dt" name="encodedBitRate"/>
+                <data key="du" name="bufferTime"/>
+                <data key="dv" name="isView" sendOnce="1"/>
+                <data key="dw" name="isSessionWithRebuffer" sendOnce="1"/>
+                <data key="dy" name="liveDelay"/>
+                <data key="dz" name="rtt"/>
+                <data key="ea" name="bucketCount"/>
+                <data key="eb" name="bucketPlays"/>
+                <data key="ec" name="bucketPauseCounts"/>
+                <data key="ed" name="bucketPauseTimes"/>
+                <data key="ee" name="bucketSeeks"/>
+                <data key="ef" name="bucketForwardSeeks"/>
+                <data key="eg" name="bucketBackwardSeeks"/>
+                <data key="eh" name="bucketRebufferCounts"/>
+                <data key="ei" name="bucketRebufferTimes"/>
+                <data key="ej" name="bucketResumeBufferCounts"/>
+                <data key="ek" name="bucketResumeBufferTimes"/>
+                <data key="el" name="bucketSeekTimes"/>
+                <data key="em" name="bucketFullScreenTimes"/>
+                <data key="es" name="_m_est"/>
+                <data key="et" name="_m_eet"/>
+                <data key="fb" name="transitionCount"/>
+                <data key="fd" name="transitionUpSwitchCount"/>
+                <data key="fe" name="transitionDownSwitchCount"/>
+                <data key="ff" name="transitionTime"/>
+                <data key="fg" name="upSwitchReasonCounts"/>
+                <data key="fh" name="downSwitchReasonCounts"/>
+                <data key="fi" name="transitionStreamTimeSession"/>
+                <data key="fj" name="transitionStreamTimes"/>
+                <data key="fk" name="bitRateBucketTimes">
+                    <matchRules>
+                        <match key="S" type="range" value="max:1500"/>
+                        <match key="Q" type="range" value="min:1500;max:2500"/>
+                        <match key="D" type="range" value="min:2500"/>
+                    </matchRules>
+                </data>
+                <data key="fl" name="averagedBitRate"/>
+                <data key="ft" name="_m_isft"/>
+                <data key="gb" name="adSession"/>
+                <data key="gc" name="adCount"/>
+                <data key="gh" name="adAbandonCount"/>
+                <data key="rs" name="rebufferSession"/>
+                <data key="sc" name="subCategory"/>
+				<data key="so" name="socialSharing"/>
+            </dataMetrics>
+        </playing>
+        <common>
+            <dataMetrics>
+                <data key="a" name="eventCode"/>
+                <data key="b" name="beaconId"/>
+                <data key="c" name="sessionId"/>
+                <data key="d" name="viewerId"/>
+                <data key="d" name="clientId"/>
+                <data key="e" name="sequenceId"/>
+                <data key="f" name="logType"/>
+                <data key="g" name="endOfStream"/>
+                <data key="h" name="logVersion"/>
+                <data key="i" name="formatVersion"/>
+                <data key="k" name="visitId"/>
+                <data key="m" name="playerState"/>
+                <data key="w" name="currentClockTime"/>
+                <data key="ac" name="streamName"/>
+                <data key="ag" name="pageHost"/>
+                <data key="ah" name="pageReferrerHost"/>
+                <data key="al" name="os"/>
+                <data key="ax" name="deliveryType"/>
+                <data key="ca" name="errorCode"/>
+                <data key="cg" name="category"/>
+                <data key="dx" name="logInterval"/>
+                <data key="en" name="eventName"/>
+                <data key="ep" name="encodingspec"/>
+                <data key="hd" name="hdcore"/>
+                <data key="mt" name="manifestLoadTime"/>
+                <data key="pd" name="playerId"/>
+                <data key="pt" name="pvtokenGenerationTime"/>
+                <data key="sa" name="device"/>
+                <data key="sg" name="sessionGUID"/>
+                <data key="sh" name="show"/>
+                <data key="tt" name="title"/>
+                <data key="vv" name="xViewerIdVersion"/>
+                <data key="xd" name="xViewerId"/>
+            </dataMetrics>
+        </common>
+        <playStart eventCode="S">
+            <dataMetrics>
+                <data key="v" name="currentStreamTime"/>
+                <data key="aa" name="hostName"/>
+                <data key="ab" name="appName"/>
+                <data key="ad" name="port"/>
+                <data key="ae" name="protocol"/>
+                <data key="af" name="playerReferrer"/>
+                <data key="ai" name="userAgent"/>
+                <data key="aj" name="playerVersion"/>
+                <data key="ak" name="playerType"/>
+                <data key="am" name="format"/>
+                <data key="an" name="connectTime"/>
+                <data key="ao" name="bufferingTime"/>
+                <data key="ap" name="startupTime"/>
+                <data key="aq" name="streamLength"/>
+                <data key="ar" name="bytesTotal"/>
+                <data key="as" name="encodedFPS"/>
+                <data key="at" name="browser"/>
+                <data key="au" name="browserSize"/>
+                <data key="av" name="videoSize"/>
+                <data key="aw" name="streamUrl"/>
+                <data key="ay" name="pluginVersion"/>
+                <data key="az" name="beaconVersion"/>
+                <data key="ba" name="bucketLength"/>
+                <data key="bb" name="serverIp"/>
+                <data key="cl" name="contentLength"/>
+                <data key="cm" name="cdn">
+                    <matchRules>
+                        <match key="Akamai" name="hostName" type="pattern" value=".akamaihd.net,.akamai.net,.akastream.net,.edgefcs.net,.edgesuite.net,vod.hstream.video.nfl.com,a.video.nfl.com,ingame.hstream.video.nfl.com"/>
+                        <match key="Limelight" name="hostName" type="pattern" value=".llnwd.net,l.video.nfl.com"/>
+                        <match key="Level 3" name="hostName" type="pattern" value=".level3.net,.fplive.net"/>
+                    </matchRules>
+                </data>
+                <data key="cn" name="connectivity"/>
+                <data key="cy" name="contentType"/>
+                <data key="es" name="_m_est"/>
+                <data key="et" name="_m_eet"/>
+                <data key="ft" name="_m_isft"/>
+                <data key="gb" name="adSession"/>
+                <data key="gc" name="adCount"/>
+                <data key="gh" name="adAbandonCount"/>
+                <data key="sc" name="subCategory"/>
+                <data key="va" name="isVisitStart" sendOnce="1"/>
+            </dataMetrics>
+        </playStart>
+        <complete eventCode="C">
+            <dataMetrics>
+                <data key="v" name="currentStreamTime"/>
+                <data key="aa" name="hostName"/>
+                <data key="ab" name="appName"/>
+                <data key="ad" name="port"/>
+                <data key="ae" name="protocol"/>
+                <data key="af" name="playerReferrer"/>
+                <data key="ai" name="userAgent"/>
+                <data key="aj" name="playerVersion"/>
+                <data key="ak" name="playerType"/>
+                <data key="am" name="format"/>
+                <data key="an" name="connectTime"/>
+                <data key="ao" name="bufferingTime"/>
+                <data key="ap" name="startupTime"/>
+                <data key="aq" name="streamLength"/>
+                <data key="ar" name="bytesTotal"/>
+                <data key="as" name="encodedFPS"/>
+                <data key="at" name="browser"/>
+                <data key="au" name="browserSize"/>
+                <data key="av" name="videoSize"/>
+                <data key="aw" name="streamUrl"/>
+                <data key="ay" name="pluginVersion"/>
+                <data key="az" name="beaconVersion"/>
+                <data key="ba" name="bucketLength"/>
+                <data key="bb" name="serverIp"/>
+                <data key="cl" name="contentLength"/>
+                <data key="cm" name="cdn">
+                    <matchRules>
+                        <match key="Akamai" name="hostName" type="pattern" value=".akamaihd.net,.akamai.net,.akastream.net,.edgefcs.net,.edgesuite.net,vod.hstream.video.nfl.com,a.video.nfl.com,ingame.hstream.video.nfl.com"/>
+                        <match key="Limelight" name="hostName" type="pattern" value=".llnwd.net,l.video.nfl.com"/>
+                        <match key="Level 3" name="hostName" type="pattern" value=".level3.net,.fplive.net"/>
+                    </matchRules>
+                </data>
+                <data key="cn" name="connectivity"/>
+                <data key="cy" name="contentType"/>
+                <data key="es" name="_m_est"/>
+                <data key="et" name="_m_eet"/>
+                <data key="ft" name="_m_isft"/>
+                <data key="gb" name="adSession"/>
+                <data key="gc" name="adCount"/>
+                <data key="gh" name="adAbandonCount"/>
+                <data key="sc" name="subCategory"/>
+                <data key="ta" name="totalRebufferTime"/>
+                <data key="tb" name="maxPersistentBitRate"/>
+                <data key="td" name="totalAdPlayClockTime"/>
+                <data key="te" name="totalAdStartCount"/>
+                <data key="tf" name="totalAdAbandonCount"/>
+                <data key="ti" name="maxBandwidth"/>
+                <data key="tx" name="totalPlayClockTime"/>
+                <data key="ty" name="totalPlayStreamTime"/>
+                <data key="tz" name="totalRebufferCount"/>
+                <data key="va" name="isVisitStart" sendOnce="1"/>
+                <data key="xa" name="endReasonCode"/>
+                <data key="qoe" name="playquality"/>
+            </dataMetrics>
+        </complete>
+        <init eventCode="I">
+            <dataMetrics>
+                <data key="af" name="playerReferrer"/>
+                <data key="ai" name="userAgent"/>
+                <data key="aj" name="playerVersion"/>
+                <data key="ak" name="playerType"/>
+                <data key="am" name="playerFormat"/>
+                <data key="at" name="browser"/>
+                <data key="au" name="browserSize"/>
+                <data key="ay" name="pluginVersion"/>
+                <data key="az" name="beaconVersion"/>
+                <data key="pu" name="pageUrl"/>
+            </dataMetrics>
+        </init>
+		<feedback eventCode="F" limit="5" socialShareLimit="1">
+			<dataMetrics>
+				<data key="so" name="socialSharing"/>
+			</dataMetrics>
+		</feedback>
+    </statistics>
+</AkamaiPlayerAnalyticsConfig>
