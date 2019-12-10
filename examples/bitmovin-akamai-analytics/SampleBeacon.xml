@@ -4,7 +4,7 @@
     <beaconVersion>1.3</beaconVersion>
     <isActive>1</isActive>
     <logTo logInterval="300" logType="relative" maxLogLineLength="2048" secondaryLogTime="5">
-        <host>http://79423.analytics.edgesuite.net</host>
+        <host>https://79423.analytics.edgesuite.net</host>
         <path>/9.gif</path>
         <logVersion>1.2</logVersion>
         <formatVersion>1.1</formatVersion>
