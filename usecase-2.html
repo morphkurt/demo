@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/bitmovin.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1  -->
+            <section>
+                <h5>Why HEVC and VP9?</h5>
+                <p style="font-size: medium;">Advanced codecs provides same or better quality at lower bitrate.</p>
+                <ul>
+                    <li style="font-size: large;">HEVC provides upto 50% savings</li>
+                    <li style="font-size: large;">VP9 provides ~30% savings</li>
+                </ul>
+                <figure>
+
+                    <img style="border: none; width: 80%;" src="pngs/usecase-2/hevc-comparison-1024x4611.jpg"></img>
+                    <figcaption style="font-size: small;">HEVC (Left) and AVC on (Right) 1080p @ 400kbps</figcaption>
+
+                </figure>
+            </section>
+            <section>
+                <h5>HEVC and VP9 device support</h5>
+                <p style="font-size: medium;">In recent years codecs are widely adopted across the industry</p>
+                <ul>
+                    <li style="font-size: large;">HEVC support on iOS 11+</li>
+                    <li style="font-size: large;">HEVC support on Mac OS High Sierra</li>
+                    <li style="font-size: large;">Android 5.0+</li>
+                    <li style="font-size: large;">VP9 standard on Chrome</li>
+                </ul>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                        ##### Worldwide Browser Usage
+
+
+                        | Browser          | Codec | Percentage |
+                        |------------------|-------|------------|
+                        | Chrome           | VP9   | 64.92%     |
+                        | Safari           | HEVC  | 15.97%     |
+                        | Firefox          | VP9   | 4.33%      |
+                        | Samsung Internet | AVC   | 3.29%      |
+                        | UC               | AVC   | 2.94%      |
+                        | Opera            | AVC   | 2.34%      |
+                        | Edge             | HEVC  | 2.05%      |
+                        | IE               | AVC   | 1.98%      |
+                        | AOSP             | AVC   | 0.59%      |
+                        | Others           | AVC   | 1.59%      |
+
+                </textarea>
+            </section>
+            <section data-markdown>
+                    <textarea data-template>
+                            ##### Codec support 
+    
+                            | Codec | Percentage |
+                            |-------|------------|
+                            | AVC   | 13%        |
+                            | HEVC  | 18%        |
+                            | VP9   | 69%        |  
+    
+    
+                            ![alt text](pngs/usecase-2/codec-support.png "Logo Title Text 1")
+    
+                    </textarea>
+            </section>
+            <section data-markdown>
+                    <textarea data-template>
+                        ##### Multi-Codec CDN Bandwidth Savings 
+
+
+                        | Codec | Percentage | 100GB AVC Delivery | Multi-Codec Savings |
+                        |-------|------------|--------------------|---------------------|
+                        | AVC   | 13%        | 12.73              | 0                   |
+                        | HEVC  | 18%        | 18.02              | 9                   |
+                        | VP9   | 69%        | 69.25              | 21                  |
+                        |       |            | GB Savings         | 30                  |
+    
+                        
+                        Multi-Codec strategy on desktop browsers can have a bandwidth saving of up-to 30%.
+    
+                    </textarea>
+            </section>
+            <section data-markdown>
+                    <textarea data-template>
+                        ##### Multi-Codec Demo
+
+                        [Proof of Concept](examples/bitmovin-multi-codec/)
+    
+                    </textarea>
+            </section>
+    
+
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                // Interpret Markdown in <section> elements
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } }
+            ]
+        });
+    </script>
+</body>
+
+</html>

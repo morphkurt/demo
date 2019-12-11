@@ -6,13 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->Í
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
     <script type="text/javascript" src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   
+
     <link href="css/bitmovin.css" rel="stylesheet" type="text/css" />
 
     <title>Bitmovin Multi-Codec Demo</title>
@@ -48,22 +44,25 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="hevc">HEVC</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="https://bitmovin-a.akamaihd.net/content/multi-codec/hevc/stream.mpd" aria-label="url1"
-                        aria-describedby="basic-addon1">
+                    <input type="text" class="form-control"
+                        placeholder="https://bitmovin-a.akamaihd.net/content/multi-codec/hevc/stream.mpd"
+                        aria-label="url1" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="avc">AVC</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="https://bitmovin-a.akamaihd.net/content/multi-codec/h264/stream.mpd" aria-label="url2"
-                        aria-describedby="basic-addon1">
+                    <input type="text" class="form-control"
+                        placeholder="https://bitmovin-a.akamaihd.net/content/multi-codec/h264/stream.mpd"
+                        aria-label="url2" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="vp9">VP9</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="https://bitmovin-a.akamaihd.net/content/multi-codec/vp9/stream.mpd" aria-label="url3"
-                        aria-describedby="basic-addon1">
+                    <input type="text" class="form-control"
+                        placeholder="https://bitmovin-a.akamaihd.net/content/multi-codec/vp9/stream.mpd"
+                        aria-label="url3" aria-describedby="basic-addon1">
                 </div>
             </div>
 
@@ -73,7 +72,7 @@
                         Detected Browser
                     </div>
                     <div class="card-body">
-                        <table style="width: 100%;height: 100%;">
+                        <table class="table" style="width: 100%;height: 100%;">
                             <tr>
                                 <td id="browser"></td>
                                 <td id="browser-img"></td>
@@ -88,40 +87,106 @@
                     </div>
 
                 </div>
+
+
             </div>
 
 
         </div>
-
-
-
-        <div class="row mb-1">
-
-            <div class="col-12">
-
-                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="play()">PLAY</button>
-            </div>
-        </div>
-
         <div class="row mb-1">
             <div class="col-8">
                 <div id="player"></div>
             </div>
             <div class="col-4">
+
                 <div class="card">
                     <div class="card-header">
-                        Console Log
+                        Savings
                     </div>
-                    <div id="console" style="font-size: xx-small; overflow-y:auto; height: 400px;" class="card-body">
+                    <div id="savings" style="font-size: small; overflow-y:auto;" class="card-body">
+                        <table class="table">
+                            <tr>
+                                <td id="current-codec">
+                                    Current Codec
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    rate
+                                </td>
+                                <td>
+                                    resolution
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="current-rate">
+
+                                </td>
+                                <td id="current-res">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Data Downloaded
+                                </td>
+                                <td id="data-download">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Approx Savings
+                                </td>
+                                <td id="data-savings">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cost Saving
+                                </td>
+                                <td id="cost-savings">
+
+                                </td>
+                            </tr>
+                        </table>
+                        <span>* Assumption of 100,000 yearly views of this assets with 25c per GB CDN costs</span>
                     </div>
                 </div>
 
+
+            </div>
+        </div>
+        <div class="row mb-1">
+            Console
+            <div class="col-12">
+                <div id="console" style="font-size: small; overflow-y:auto; height: 250px;">
+                </div>
             </div>
         </div>
 
 
     </div>
-    </div>
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
